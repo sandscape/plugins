@@ -17,6 +17,16 @@ Boolean configureSubmitUsageStatistics() {
     callFunctionForSetting setting
 }
 
+/*
+   administrative monitors
+Jenkins.instance.getExtensionList('jenkins.management.AdministrativeMonitorsConfiguration')[0].all().each { am ->
+  println am.id
+}
+
+//jenkins.model.MasterBuildConfiguration
+Jenkins.instance.getExtensionList('jenkins.management.AdministrativeMonitorsConfiguration')[0].all().find { it.id == 'hudson.security.csrf.GlobalCrumbIssuerConfiguration' }
+*/
+
 
 
 
